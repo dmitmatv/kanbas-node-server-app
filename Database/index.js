@@ -4,7 +4,11 @@
 //import {users} from "./users"
 //import {grades} from "./grades"
 //import {enrollments} from "./enrollments"
-import {courses} from "./courses.json" assert {type: "json"};
+//import {courses} from "./courses.json" assert {type: "json"};
+
+import { readFile } from 'node:fs/promises';
+const coursesUrl = new URL("./courses.json", import.meta.url);
+const courses = JSON.parse(await readFileSync(coursesUrl, 'utf8'));
 
 /*import { readFileSync } from "fs";
 const courses = JSON.parse(readFileSync(".Database/courses.json"));
