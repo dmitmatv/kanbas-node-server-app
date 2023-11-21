@@ -7,7 +7,7 @@ import ModuleRoutes from "./modules/routes.js";
 import "dotenv/config";
 
 
-const app = express()
+const app = express();
 app.use(cors());
 app.use(express.json());
 CourseRoutes(app);

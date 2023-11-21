@@ -4,7 +4,7 @@
 //import {users} from "./users"
 //import {grades} from "./grades"
 //import {enrollments} from "./enrollments"
-import {courses} from "./courses";
+import {courses} from "./courses.json";
 
 /*import { readFileSync } from "fs";
 const courses = JSON.parse(readFileSync(".Database/courses.json"));
