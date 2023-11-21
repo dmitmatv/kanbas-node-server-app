@@ -6,6 +6,7 @@
 //import {enrollments} from "./enrollments"
 //import {courses} from "./courses.json" assert {type: "json"};
 
+import { readFileSync } from "fs";
 import { readFile } from 'node:fs/promises';
 const coursesUrl = new URL("./courses.json", import.meta.url);
 const courses = JSON.parse(await readFileSync(coursesUrl, 'utf8'));
