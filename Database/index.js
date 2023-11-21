@@ -5,12 +5,14 @@
 //import grades from "./grades.json" assert { type: "json" };
 //import enrollments from "./enrollments.json" assert { type: "json" };
 
-const courses = require("./courses.json")
-const modules = require("./modules.json")
-const assignments = require("./assignments.json")
-const users = require("./users.json")
-const grades = require("./grades.json")
-const enrollments = require("./enrollments.json")
+import { readFileSync } from "fs";
+const courses = JSON.parse(readFileSync("./courses.json"));
+const modules = JSON.parse(readFileSync("./modules.json"));
+const assignments = JSON.parse(readFileSync("./assignments.json"));
+const users = JSON.parse(readFileSync("./users.json"));
+const grades = JSON.parse(readFileSync("./grades.json"));
+const enrollments = JSON.parse(readFileSync("./enrollments.json"));
+
 
 export default {
     courses,
