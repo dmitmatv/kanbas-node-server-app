@@ -15,7 +15,7 @@ mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(cors({
                  credentials: true,
-                 origin: process.env.FRONTEND_URL,
+                 origin: "https://assignment6--famous-kashata-3cb653.netlify.app",
              }
 ));
 const sessionOptions = {
